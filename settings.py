@@ -6,16 +6,16 @@ SESSION_CONFIGS = [
     #     app_sequence=['public_goods'],
     #     num_demo_participants=3,
     # ),
-    # dict(
-    #     name='mysecondproject',
-    #     app_sequence=['mysecondproject'],
-    #     num_demo_participants=3,
-    # ),
+      dict(
+          name='mysecondproject',
+          app_sequence=['mysecondproject'],
+          num_demo_participants=3,
+      ),
 
-    dict(
-        name='Carbon_offsetting',
-        app_sequence=['Carbon_offset'],
-        num_demo_participants=3,
+    #dict(
+    #    name='Carbon_offsetting',
+    #    app_sequence=['Carbon_offset'],
+    #    num_demo_participants=3,
     ),
 ]
 
