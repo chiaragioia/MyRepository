@@ -1,0 +1,46 @@
+{{ block title }}
+    DEMOGRAPHIC QUESTIONS
+{{ endblock }}
+
+{{ block content }}
+
+<div class="box-container">
+    <div class="box">
+        <div class="box-face box-front">  
+
+{{ formfield player.input_text_1 label="<b>Your age is:</b>"}}
+
+
+{{ formfield player.input_checker_g label="<b>Which is the gender you identify with?</b>"}}
+
+
+{{ formfield player.input_dropdown_d label="<b>The highest level of education you reached is:</b>"}}
+
+
+{{ formfield player.input_dropdown_h label="<b>Your field of study is:</b>"}}
+
+
+<style>
+    .box {
+        border-style: solid;
+        border-color: #0275d8;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+  </style>
+
+<br>
+<div class="row justify-content-end">
+    <div class="col-md-2">
+      <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+        <span style="font-size:14pt">Continue</span>
+      </button>
+    </div>
+  </div>
+
+{{ endblock }}
+
+

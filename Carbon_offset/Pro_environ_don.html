@@ -1,0 +1,127 @@
+{{ block title }}
+    THANK YOU!
+{{ endblock }}
+
+
+{{ block content }}
+<div class="box-container">
+    <div class="box">
+        <div class="box-face box-front">  
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <style>
+              /* Add relief effect */
+              .relief {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+              }
+              
+              /* Increase font size */
+              .bigger {
+                font-size: 24px;
+              }
+              
+              /* Change text color to blue */
+              .blue {
+                color: blue;
+              }
+            </style>
+           
+            </head>
+            <br>
+            <center>
+            <body>
+            <p>
+              <p class="relief bigger blue"> <strong>Your participation fee is 9€!</strong></p>
+            </p>
+            </body>
+            </center>
+            
+            </html>
+<br>
+<b>Do you want to give a part of your show-up fee to the pro-environmental organization <i>'Legambiente Trento'</i>?</b>
+<p>Legambiente Trento deals with territorial governance in the Alps, mobility, waste management, biodiversity and agriculture, above all at the provincial level. In particular, the Legambiente Circle of Trento is the territorial node of Legambiente Onlus, the largest Italian environmental association.</p>
+
+<center>
+<a href="http://www.legambientetrento.it/site/?page_id=334" class="btn btn-success btn-lg" target="_blank">Visit Legambientetrento.it!</a>
+</center>
+<br>
+
+<br>
+<p> <b>Now, indicate the amount of money, in euros, that you want to give to the the pro-enviromental organization. If you do not want to donate select 0 otherwise select the preferred amount.
+Click on the bar and move the slider to indicate the amount of money you want to donate. </b></p>
+<b>If you donate, we will keep you updated about the pro-environmental project that will be realized by Legambiente Trento thanks to your contribution! </b></b>
+<br>
+
+<style>
+    .mgslider-wrapper {
+        border-spacing: 10px;
+    }
+
+    .mgslider-limit {
+        width: 10%;
+        min-width: 75px;
+        height: 40px;
+        margin: 100px;
+        text-align: center;
+        background: #eee;
+        border: 1px solid #888;
+    }
+
+    .mgslider-limit,
+    .mgslider-value {
+        font-variant-numeric: tabular-nums;
+    }
+
+    .mgslider-before {
+        height: 16px;
+        width: 100%;
+        background: #1e5bff;
+    }
+</style>
+
+{{ formfield_errors 'slider_1' }}
+ <br>
+<div id="slider1_here"></div>
+<br>
+<script src="{{ static 'mgslider.js' }}"></script>
+
+<script>
+    $(document).ready(function (event) {
+        slider1 = new mgslider("slider_1", 0, 9, 0.5);
+        slider1.print(document.getElementById("slider1_here"));
+    });
+</script>
+
+<style>
+    .box {
+        border-style: solid;
+        border-color: #0275d8;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+  </style>
+
+
+<div class="container" style="font-size:18pt">
+    <div class="row">
+      &nbsp;
+    </div>
+    <div class="row" style="padding-left:135px;">
+      <div class="col-md-10">
+  
+      </div>
+      <div class="col-md-2">
+        <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+           <span style="font-size:14pt">Finish</span>
+       </button>
+      </div>
+    </div>
+  </div>
+  
+
+{{ endblock }}

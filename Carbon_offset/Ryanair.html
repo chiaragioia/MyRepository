@@ -1,0 +1,50 @@
+{{ block title }}
+    RYANAIR TICKET AS A PRIZE!
+{{ endblock }}
+
+
+{{ block content }}
+
+
+<p> <b> At the end of the experiment a participant will be drawn randomly and receive a Ryanair coupon as a prize!</b> </p>
+<p> <b>You can visualize it in the image below!</b> </p>
+
+
+
+
+<div class="image-container">
+    <img _ngcontent-rwr-c122="" class="gift-cards-physical-select__preview gift-cards-physical-select__preview-wide img-thumbnail" 
+         src="https://www.ryanair.com/ryanair3/dam/2022/gift-cards/10/physical-gift-cards/IT-2.jpg.transform/1x/image.09f6d137fc8d6ddcfcd9e27f3c226b09.jpg"
+         alt="Gift card preview">
+</div>
+
+<style>
+    .image-container {
+        max-width: 600px; /* Set the maximum width of the container */
+        margin: auto; /* Center the container horizontally */
+        padding: 10px; /* Add some padding around the container */
+    }
+    
+    .image-container img {
+        max-width: 100%; /* Set the maximum width of the image to fill the container */
+        height: auto; /* Set the height to auto to maintain the aspect ratio */
+        display: block; /* Make the image a block element to center it within the container */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+</style>
+
+
+{{ formfields }}
+
+    
+<div class="row justify-content-end">
+    <div class="col-md-2">
+      <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+        <span style="font-size:14pt">Continue</span>
+      </button>
+    </div>
+  </div>
+  
+
+
+{{ endblock }}

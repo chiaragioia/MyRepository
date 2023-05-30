@@ -1,0 +1,129 @@
+{{ block title }}
+    SURVEY
+{{ endblock }}
+
+{{ block content }}
+
+<div class="box-container">
+    <div class="box">
+        <div class="box-face box-front">  
+
+<p><b>To what extent do you agree or disagree with each of the following statements? </b></p>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        input[type="radio"] {
+            margin-left: 5px;
+        }
+    </style>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        input[type="radio"] {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Statements</th>
+                <th>Totally agree</th>
+                <th>Tend to agree</th>
+                <th>Tend to disagree</th>
+                <th>Totally disagree</th>
+                <th>Do not know</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i>More public financial support should be given to the transition to clean energies even if it means subsidies to fossil fuels should be reduced</i></td>
+                <td><input type="radio" name="statement1" value="1"></td>
+                <td><input type="radio" name="statement1" value="2"></td>
+                <td><input type="radio" name="statement1" value="3"></td>
+                <td><input type="radio" name="statement1" value="4"></td>
+                <td><input type="radio" name="statement1" value="5"></td>
+            </tr>
+            <tr>
+                <td><i>Taking action on climate change will lead to innovation that will make EU companies more competitive</i></td>
+                <td><input type="radio" name="statement2" value="1"></td>
+                <td><input type="radio" name="statement2" value="2"></td>
+                <td><input type="radio" name="statement2" value="3"></td>
+                <td><input type="radio" name="statement2" value="4"></td>
+                <td><input type="radio" name="statement2" value="5"></td>
+            </tr>
+            <tr>
+                <td><i>Reducing fossil fuel imports from outside the EU can increase energy security and benefit the EU economically</i></td>
+                <td><input type="radio" name="statement3" value="1"></td>
+                <td><input type="radio" name="statement3" value="2"></td>
+                <td><input type="radio" name="statement3" value="3"></td>
+                <td><input type="radio" name="statement3" value="4"></td>
+                <td><input type="radio" name="statement3" value="5"></td>
+            </tr>
+            <tr>
+                <td><i>Adapting to the adverse impacts of climate change can have positive outcomes for citizens in the EU</i></td>
+                <td><input type="radio" name="statement4" value="1"></td>
+                <td><input type="radio" name="statement4" value="2"></td>
+                <td><input type="radio" name="statement4" value="3"></td>
+                <td><input type="radio" name="statement4" value="4"></td>
+                <td><input type="radio" name="statement4" value="5"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+<style>
+    .box {
+        border-style: solid;
+        border-color: #0275d8;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+  </style>
+  
+<br>
+<br>
+<div class="row justify-content-end">
+    <div class="col-md-2">
+      <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+        <span style="font-size:14pt">Continue</span>
+      </button>
+    </div>
+  </div>
+
+{{ endblock }}
+

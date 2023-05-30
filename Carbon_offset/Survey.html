@@ -1,0 +1,93 @@
+{{ block title }}
+    SURVEY
+{{ endblock }}
+
+
+
+{{ block content }}
+
+
+<div class="box-container">
+    <div class="box">
+        <div class="box-face box-front">
+{{ formfield "input_checker" label="<b>Which of the following do you consider to be the single most serious problem facing the world as a whole?</b>"}}
+
+</div>
+<div class="box-face box-back">
+
+<p> <b>And how serious a problem do you think climate change is at this moment? Please
+use a scale from 1 to 10, with '1' meaning it is "not at all a serious problem" and '10'
+meaning it is "an extremely serious problem". Click on the bar below and move the slider to indicate the seriousness of the problem from your perspective.</b></p>
+
+</div>
+<div class="box-face box-left">
+
+
+</div>
+<div class="box-face box-right">
+
+
+<style>
+  .mgslider-wrapper {
+      border-spacing: 10px;
+  }
+
+  .mgslider-limit {
+      width: 10%;
+      min-width: 75px;
+      height: 40px;
+      margin: 100px;
+      text-align: center;
+      background: #eee;
+      border: 1px solid #888;
+  }
+
+  .mgslider-limit,
+  .mgslider-value {
+      font-variant-numeric: tabular-nums;
+  }
+
+  .mgslider-before {
+      height: 16px;
+      width: 100%;
+      background: #1e5bff;
+  }
+</style>
+
+{{ formfield_errors 'slider_2' }}
+<br>
+<div id="slider2_here"></div>
+<br>
+<script src="{{ static 'mgslider.js' }}"></script>
+
+<script>
+  $(document).ready(function (event) {
+      slider2 = new mgslider("slider_2", 1, 10, 1);
+      slider2.print(document.getElementById("slider2_here"));
+  });
+</script>
+{{ formfield "input_checker_2" label="<b>In your opinion, who within the EU is responsible for tackling climate change? </b>"}}
+
+<style>
+    .box {
+        border-style: solid;
+        border-color: #0275d8;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+</style>
+<br>
+
+<div class="row justify-content-end">
+    <div class="col-md-2">
+      <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+        <span style="font-size:14pt">Continue</span>
+      </button>
+    </div>
+  </div>
+
+{{ endblock }}
+

@@ -1,0 +1,38 @@
+{{ block title }}
+    SURVEY
+{{ endblock }}
+
+{{ block content }}
+
+<div class="box-container">
+  <div class="box">
+      <div class="box-face box-front">
+
+{{ formfield player.input_radio label="<b>Have you personally taken any action to fight climate change over the past 6 months?</b>"}}
+
+{{ formfield "input_checker_4" label="<b>Which action, among the following ones, most apply to you? </b>"}}
+
+
+<style>
+  .box {
+      border-style: solid;
+      border-color: #0275d8;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-right: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+</style>
+
+
+<div class="row justify-content-end">
+    <div class="col-md-2">
+      <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+        <span style="font-size:14pt">Continue</span>
+      </button>
+    </div>
+  </div>
+
+{{ endblock }}
+

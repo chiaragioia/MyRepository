@@ -1,0 +1,39 @@
+{{ block title }}
+    SURVEY
+{{ endblock }}
+
+{{ block content }}
+
+<div class="box-container">
+    <div class="box">
+        <div class="box-face box-front">  
+
+          <br>
+{{ formfield player.input_radio_5 label="<b>Do you think that the (NATIONALITY) government is doing enough, not enough or too much to tackle climate change?</b>"}}
+
+{{ formfield player.input_radio_6 label="<b>To what extent do you agree with the following statement: <i>'We should reduce greenhouse gas emissions to a minimum while offsetting the remaining emissions, for instance by increasing forested areas, to make the EU economy climate-neutral by 2050'</i></b>"}}
+
+<style>
+    .box {
+        border-style: solid;
+        border-color: #0275d8;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+  </style>
+  
+
+  <br>
+  <div class="row justify-content-end">
+      <div class="col-md-2">
+        <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+          <span style="font-size:14pt">Continue</span>
+        </button>
+      </div>
+    </div>
+
+{{ endblock }}
+
